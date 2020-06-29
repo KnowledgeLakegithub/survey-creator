@@ -15,16 +15,16 @@ var svgStoreUtils = require(path.resolve(
 
 var banner = [
   "SurveyJS Creator v" + packageJson.version,
-  "(c) 2015-2020 Devsoft Baltic OÜ - http://surveyjs.io/",
-  "Github: https://github.com/surveyjs/survey-creator",
-  "License: https://surveyjs.io/Licenses#SurveyCreator"
+  "Github: https://github.com/KnowledgeLakegithub/survey-creator",
+  "License: https://surveyjs.io/Licenses#SurveyCreator",
+  ""
 ].join("\n");
 
 var dts_banner = [
   "Type definitions for SurveyJS Creator JavaScript library v" +
     packageJson.version,
   "(c) 2015-2020 Devsoft Baltic OÜ - http://surveyjs.io/",
-  "Github: https://github.com/surveyjs/survey-creator",
+  "Github: https://github.com/KnowledgeLakegithub/survey-creator",
   "License: https://surveyjs.io/Licenses#SurveyCreator",
   ""
 ].join("\n");
@@ -227,7 +227,7 @@ module.exports = function(options) {
     },
     optimization: {
       minimize: isProductionBuild,
-    },    
+    },
     module: {
       rules: [
         {
@@ -287,9 +287,9 @@ module.exports = function(options) {
       },
       "survey-knockout": {
         root: "Survey",
-        commonjs2: "survey-knockout",
-        commonjs: "survey-knockout",
-        amd: "survey-knockout"
+        commonjs2: "Survey",
+        commonjs: "Survey",
+        amd: "Survey"
       }
     },
     plugins: [
